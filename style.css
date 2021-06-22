@@ -80,7 +80,7 @@ img {
 .showcase {
   grid-area: showcase;
   min-height: 400px;
-  background: url(/img/pexels-negative-space-34140.jpg);
+  background: url(/img/pic2.jpg);
   background-size: cover;
   background-position: center;
   padding: 3rem;
@@ -114,7 +114,7 @@ img {
   margin-bottom: 1rem;
 }
 
-.top-box:hover{
+.top-box:hover {
   background: var(--light);
 }
 .top-box .price {
@@ -128,7 +128,6 @@ img {
   grid-area: top-box-b;
 }
 
-
 /* Boxes */
 
 .boxes {
@@ -138,46 +137,45 @@ img {
   margin-bottom: 1rem;
 }
 
-.box{
+.box {
   background: var(--primary);
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: var(--Shadow);
 }
 
-.box:hover{
+.box:hover {
   background: var(--light);
 }
 
-
 /* Info */
 
-.info{
+.info {
   background: var(--primary);
   box-shadow: var(--Shadow);
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 3rem;
   margin-bottom: 1rem;
 }
 
 /* Portfolio */
-.portfolio{
+.portfolio {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.portfolio img{
+.portfolio img {
   width: 100%;
 }
 
-.portfolio img:hover{
-  box-shadow: 2px 4px 6px 8px rgba(104, 104, 104, 0.8);;
+.portfolio img:hover {
+  box-shadow: 2px 4px 6px 8px rgba(104, 104, 104, 0.8);
 }
 
-footer{
+footer {
   margin-top: 2rem;
   background: var(--dark);
   color: var(--light);
@@ -185,39 +183,37 @@ footer{
   padding: 1rem;
 }
 
- /* Media Quaries */
- @media (max-width: 700px){
-.top-container{
-  grid-template-areas: 
-  'showcase showcase'
-  'top-box-a top-box-b';
+/* Media Quaries */
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      "showcase showcase"
+      "top-box-a top-box-b";
+  }
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
 }
-.showcase h1{
-font-size: 2.5rem;
-}
 
-.main-nav ul{
-  grid-template-columns: 1fr;
-}
-
-.info{
-grid-template-columns: 1fr;
-}
-
-.info .btn{
-  display: block;
-  text-align: center;
-  margin: auto;
-}
-
- }
-
-
-@media(max-width:500px){
-  .top-container{
-    grid-template-areas: 
-    'showcase'
-    'top-box-a'
-    'top-box-b';
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      "showcase"
+      "top-box-a"
+      "top-box-b";
   }
 }
